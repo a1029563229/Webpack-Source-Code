@@ -1,0 +1,382 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 339,
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "start": 0,
+      "end": 31,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 6,
+          "end": 30,
+          "id": {
+            "type": "Identifier",
+            "start": 6,
+            "end": 11,
+            "name": "acorn"
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 14,
+            "end": 30,
+            "callee": {
+              "type": "Identifier",
+              "start": 14,
+              "end": 21,
+              "name": "require"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "start": 22,
+                "end": 29,
+                "value": "acorn",
+                "raw": "'acorn'"
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 36,
+      "end": 61,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 42,
+          "end": 60,
+          "id": {
+            "type": "Identifier",
+            "start": 42,
+            "end": 44,
+            "name": "fs"
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 47,
+            "end": 60,
+            "callee": {
+              "type": "Identifier",
+              "start": 47,
+              "end": 54,
+              "name": "require"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "start": 55,
+                "end": 59,
+                "value": "fs",
+                "raw": "'fs'"
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 66,
+      "end": 95,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 72,
+          "end": 94,
+          "id": {
+            "type": "Identifier",
+            "start": 72,
+            "end": 76,
+            "name": "path"
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 79,
+            "end": 94,
+            "callee": {
+              "type": "Identifier",
+              "start": 79,
+              "end": 86,
+              "name": "require"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "start": 87,
+                "end": 93,
+                "value": "path",
+                "raw": "'path'"
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "FunctionDeclaration",
+      "start": 101,
+      "end": 314,
+      "id": {
+        "type": "Identifier",
+        "start": 110,
+        "end": 123,
+        "name": "parseAndWrite"
+      },
+      "expression": false,
+      "generator": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "start": 126,
+        "end": 314,
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "start": 134,
+            "end": 160,
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "start": 138,
+                "end": 159,
+                "id": {
+                  "type": "Identifier",
+                  "start": 138,
+                  "end": 141,
+                  "name": "AST"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "start": 144,
+                  "end": 159,
+                  "callee": {
+                    "type": "MemberExpression",
+                    "start": 144,
+                    "end": 155,
+                    "object": {
+                      "type": "Identifier",
+                      "start": 144,
+                      "end": 149,
+                      "name": "acorn"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "start": 150,
+                      "end": 155,
+                      "name": "parse"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "start": 156,
+                      "end": 158,
+                      "value": "",
+                      "raw": "''"
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "let"
+          },
+          {
+            "type": "VariableDeclaration",
+            "start": 167,
+            "end": 213,
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "start": 173,
+                "end": 212,
+                "id": {
+                  "type": "Identifier",
+                  "start": 173,
+                  "end": 181,
+                  "name": "AST_JSON"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "start": 184,
+                  "end": 212,
+                  "callee": {
+                    "type": "MemberExpression",
+                    "start": 184,
+                    "end": 198,
+                    "object": {
+                      "type": "Identifier",
+                      "start": 184,
+                      "end": 188,
+                      "name": "JSON"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "start": 189,
+                      "end": 198,
+                      "name": "stringify"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 199,
+                      "end": 202,
+                      "name": "AST"
+                    },
+                    {
+                      "type": "Literal",
+                      "start": 204,
+                      "end": 208,
+                      "value": null,
+                      "raw": "null"
+                    },
+                    {
+                      "type": "Literal",
+                      "start": 210,
+                      "end": 211,
+                      "value": 2,
+                      "raw": "2"
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "ExpressionStatement",
+            "start": 220,
+            "end": 308,
+            "expression": {
+              "type": "CallExpression",
+              "start": 220,
+              "end": 307,
+              "callee": {
+                "type": "MemberExpression",
+                "start": 220,
+                "end": 236,
+                "object": {
+                  "type": "Identifier",
+                  "start": 220,
+                  "end": 222,
+                  "name": "fs"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 223,
+                  "end": 236,
+                  "name": "writeFileSync"
+                },
+                "computed": false
+              },
+              "arguments": [
+                {
+                  "type": "CallExpression",
+                  "start": 237,
+                  "end": 273,
+                  "callee": {
+                    "type": "MemberExpression",
+                    "start": 237,
+                    "end": 246,
+                    "object": {
+                      "type": "Identifier",
+                      "start": 237,
+                      "end": 241,
+                      "name": "path"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "start": 242,
+                      "end": 246,
+                      "name": "join"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 247,
+                      "end": 256,
+                      "name": "__dirname"
+                    },
+                    {
+                      "type": "Literal",
+                      "start": 258,
+                      "end": 272,
+                      "value": "./AST_X.json",
+                      "raw": "'./AST_X.json'"
+                    }
+                  ]
+                },
+                {
+                  "type": "Identifier",
+                  "start": 275,
+                  "end": 283,
+                  "name": "AST_JSON"
+                },
+                {
+                  "type": "ObjectExpression",
+                  "start": 285,
+                  "end": 306,
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "start": 287,
+                      "end": 304,
+                      "method": false,
+                      "shorthand": false,
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 287,
+                        "end": 295,
+                        "name": "encoding"
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "start": 297,
+                        "end": 304,
+                        "value": "utf-8",
+                        "raw": "'utf-8'"
+                      },
+                      "kind": "init"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 320,
+      "end": 336,
+      "expression": {
+        "type": "CallExpression",
+        "start": 320,
+        "end": 335,
+        "callee": {
+          "type": "Identifier",
+          "start": 320,
+          "end": 333,
+          "name": "parseAndWrite"
+        },
+        "arguments": []
+      }
+    }
+  ],
+  "sourceType": "script"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "ExpressionStatement",
+  "expression": {
+    "type": "NewExpression",
+    "callee": {
+      "type": "Identifier",
+      "name": "Car"
+    },
+    "arguments": []
+  }
+}
