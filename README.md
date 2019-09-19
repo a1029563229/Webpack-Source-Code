@@ -22,3 +22,4 @@
 + [新知识点](https://github.com/a1029563229/Webpack-Source-Code/tree/master/new)
 + [库](https://github.com/a1029563229/Webpack-Source-Code/tree/master/new/lib)
 + [loader](https://github.com/a1029563229/Webpack-Source-Code/tree/master/new/loader)
++ [plugins](https://github.com/a1029563229/Webpack-Source-Code/tree/master/new/plugins)
