@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@webassemblyjs/helper-code-frame": "^1.8.5",
-    "acorn": "^7.0.0",
+    "acorn": "^6.4.1",
     "escodegen": "^1.12.0"
   },
   "devDependencies": {
